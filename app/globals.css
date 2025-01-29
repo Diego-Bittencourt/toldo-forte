@@ -19,3 +19,102 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+.bg-gradient {
+  background: linear-gradient(to right, #4b5563, #1f2937, #000000);
+  color: white;
+}
+
+.centered {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.shadow {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.hover-transition {
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.hover-transition:hover {
+  transform: scale(1.25);
+  color: #4ade80;
+}
+
+.header {
+  background: #1f2937;
+  color: #ffffff;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.main-content {
+  padding: 40px;
+  max-width: 1200px;
+  margin: auto;
+  text-align: center;
+}
+
+.button {
+  background: #4ade80;
+  color: #ffffff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.button:hover {
+  background: #38b478;
+}
+
+.link {
+  color: #4ade80;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.link:hover {
+  color: #38b478;
+}
+
+/* topo */
+.appbar {
+  background: #4b5563;
+  color: white;
+  padding: 10px 20px;
+  border-bottom: 2px solid #4ade80;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.appbar .logo {
+  text-align: left;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.appbar .nav-links {
+  margin-left: auto;
+  display: flex;
+  gap: 20px;
+}
+
+.appbar .nav-links a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.appbar .nav-links a:hover {
+  color: #4ade80;
+}
