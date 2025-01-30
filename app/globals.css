@@ -32,11 +32,6 @@ body {
   justify-content: center;
   height: 100vh;
 }
-
-.shadow {
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
 .hover-transition {
   transition: transform 0.3s ease, color 0.3s ease;
 }
@@ -117,4 +112,9 @@ body {
 
 .appbar .nav-links a:hover {
   color: #4ade80;
+}
+
+.foto {
+ width: 200px;
+ margin: 100px 0;
 }
