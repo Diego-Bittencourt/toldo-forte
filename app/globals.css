@@ -3,13 +3,13 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #050505;
+  --foreground: #ffffff;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
+    --background: #ffffff;
     --foreground: #ededed;
   }
 }
@@ -21,8 +21,8 @@ body {
 }
 
 .bg-gradient {
-  background: linear-gradient(to right, #4b5563, #1f2937, #000000);
-  color: white;
+  background: linear-gradient(to right, #4b5563, #1f2937, #fffdfd);
+  color: rgb(255, 255, 255);
 }
 
 .centered {
@@ -32,51 +32,14 @@ body {
   justify-content: center;
   height: 100vh;
 }
-.hover-transition {
-  transition: transform 0.3s ease, color 0.3s ease;
-}
-
-.hover-transition:hover {
-  transform: scale(1.25);
-  color: #4ade80;
-}
-
 .header {
-  background: #1f2937;
+  background: #ffffff;
   color: #ffffff;
   padding: 20px;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-
-.main-content {
-  padding: 40px;
-  max-width: 1200px;
-  margin: auto;
-  text-align: center;
-}
-
-.button {
-  background: #4ade80;
-  color: #ffffff;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background 0.3s ease;
-}
-
-.button:hover {
-  background: #38b478;
-}
-
-.link {
-  color: #4ade80;
-  text-decoration: none;
-  transition: color 0.3s ease;
-}
-
 .link:hover {
   color: #38b478;
 }
@@ -111,10 +74,78 @@ body {
 }
 
 .appbar .nav-links a:hover {
-  color: #4ade80;
+  color: #ffffff;
 }
 
 .foto {
  width: 200px;
  margin: 100px 0;
+}
+
+@keyframes fade-in {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.animate-fade-in {
+  animation: fade-in 1s ease-in-out;
+}
+
+@keyframes slide-up {
+  0% { transform: translateY(20px); opacity: 0; }
+  100% { transform: translateY(0); opacity: 1; }
+}
+
+.animate-slide-up {
+  animation: slide-up 0.5s ease-in-out;
+}
+
+.foto {
+  transition: transform 0.5s;
+}
+
+.foto:hover {
+  transform: scale(1.1);
+}
+
+.container {
+  background-color: #a9a9aa;
+  padding: 20px;
+}
+
+.centered {
+  background-color: rgb(251, 251, 251);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(254, 249, 249, 0.1);
+}
+
+header {
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgb(255, 248, 248);
+  padding: 1rem 0;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header nav a {
+  color: #4a5568;
+  transition: color 0.3s;
+}
+
+header nav a:hover {
+  color: #000000;
+}
+
+@keyframes fade-in {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.animate-fade-in {
+  animation: fade-in 1s ease-in-out;
 }
