@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 :root {
-  --background: #050505;
+  --background: #fff9f9;
   --foreground: #ffffff;
 }
 
@@ -21,8 +21,8 @@ body {
 }
 
 .bg-gradient {
-  background: linear-gradient(to right, #4b5563, #1f2937, #fffdfd);
-  color: rgb(255, 255, 255);
+  background: linear-gradient(to right, #4b5563, #1f2937, #000000);
+  color: rgb(7, 7, 7);
 }
 
 .centered {
@@ -33,7 +33,7 @@ body {
   height: 100vh;
 }
 .header {
-  background: #ffffff;
+  background: #1f2937;
   color: #ffffff;
   padding: 20px;
   display: flex;
@@ -138,7 +138,7 @@ header nav a {
 }
 
 header nav a:hover {
-  color: #000000;
+  color: #fffefe;
 }
 
 @keyframes fade-in {
